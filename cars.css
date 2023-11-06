@@ -1,0 +1,253 @@
+ body{
+    scroll-behavior: smooth;
+ }
+ .image-text {
+            font-size: 122px;
+            font-family: 'Poppins',sans-serif;
+            font-weight: bold;
+            background-image: url('cars.png');
+            -webkit-text-fill-color: #fef427; 
+            -webkit-background-clip: text;
+            margin-top:-1505px;
+            
+            position: relative;
+            z-index: 2;
+        }
+        #home{
+            height: 108em;
+        }
+
+        .text-image {
+            width: 80%;
+            height: auto;
+            
+            overflow: hidden;
+            position: absolute;
+            top: 35%;
+            left: 11%;
+            z-index: 2;
+        }
+
+        .text-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+            
+            .flex-1{
+              height: auto;
+            }
+            
+          
+          
+         
+        
+        
+          h2{
+            font-size: 21px;
+            
+          }
+          .text{
+            font-size: 16px;
+          }
+          
+        .yellow{
+            background-color: #fbae3c;
+            padding: 10px;
+            top: 30px;
+            margin-bottom: 60px;
+            
+        }
+        
+          
+        .flex-container-1{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 60px;
+          font-family: 'poppins',sans-serif;
+        }  
+        .flex-1 {
+            
+          flex: calc(33.333% - 24px);
+            position: relative;
+            max-width: 320px;
+            max-height: 320px;
+            background-color: #f2f8f9;
+            color: #f1f2f3;
+            font-weight: 600;
+            border-radius: 10px;
+            padding: 1em 1.9em;
+            margin: 12px;
+            text-decoration: none;
+            z-index: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #12618d,#12618d);
+           
+          }
+          
+          .flex-1:before{
+            content: '';
+            position:absolute;
+            font-family: 'poppins',sans-serif;
+            z-index: -6;
+            top: -16px;
+            right: -16px;
+            background: linear-gradient(135deg,#fef427, #fef427);
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            transition: transform 0.35s ease-out;
+            color: #001220;
+          }
+          
+          .flex-1:hover:before{
+            transform: scale(32);
+          }
+          
+          .flex-1:hover .text {
+            transition: all 0.5s ease-out;
+            color: #001220;
+          }
+          
+          .flex-1:hover .one {
+            transition: all 0.5s ease-out;
+            color: #001220;
+          }
+          @media (max-width: 768px) {
+            .flex-container-1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; 
+                align-items: center;
+                padding: 0 20px;
+              
+            }
+          #Cars{
+            height: 90em;
+            padding-top: 90em;
+            margin-top: 100em;
+          }
+          .h1::after { 
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 2px;
+            width: 0;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          }
+          
+          .h1:hover::after { 
+            width: 100%; 
+            left: 0; 
+          }
+      
+            .flex-1 {
+                flex: calc(50% - 24px);
+                height: auto; 
+            }
+        }
+        .slideshow-container {
+            max-width: 35%;
+            position: relative;
+            margin: auto;
+          }
+          
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+          
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          
+          .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+          }
+          
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active, .dot:hover {
+            background-color: #717171;
+          }
+          
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          @media screen and (max-width:1000px){
+
+            footer{
+              margin-top:30em;
+            }
+          }
+          .footer{
+            font-size: 23px;
+            font-family: 'poppins',sans-serif;
+            color: #202020;
+            padding-top: 20px;
+          }
+          footer{
+            background-color: #fef427;
+            height: 5em;
+            margin-top: 80px;
+          }
+          #myBtn {
+            display: none; 
+            position: fixed; 
+            bottom: 5px; 
+            right: 30px; 
+            z-index: 99; 
+            border: none; 
+            outline: none; 
+            background-color: #fef427; 
+            color: #202020; 
+            cursor: pointer; 
+            padding: 10px; 
+            border-radius: 5px; 
+            font-size: 18px; 
+            margin-bottom: 10px;
+            height: 40px;
+          }
+          
+          #myBtn:hover {
+            background-color:#fef427; 
+          }
+          .up{
+          margin-bottom: 20px;
+          }
